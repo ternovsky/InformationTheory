@@ -2,62 +2,44 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75fed68d-3b78-4599-aaa3-e3d86ef1437c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ternovsky/Alphabet.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ternovsky/Code.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ternovsky/Main.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ternovsky/ProbableSource$1.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ternovsky/ProbableSource.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ternovsky/Word.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ternovsky/code/RegularCode.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ternovsky/code/prefix/FanoCode.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ternovsky/exceptions/NotAlphabetWord.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/site/images/close.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/site/images/collapsed.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/site/images/expanded.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/site/images/external.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/site/images/icon_error_sml.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/site/images/icon_info_sml.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/site/images/icon_success_sml.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/site/images/icon_warning_sml.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/site/images/logos/build-by-maven-black.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/site/images/logos/build-by-maven-white.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/site/images/logos/maven-feather.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/site/images/newwindow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/InformationTheory.iws" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ternovsky/Alphabet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ternovsky/Code.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ternovsky/Main.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ternovsky/ProbableSource.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ternovsky/Word.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ternovsky/code/RegularCode.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ternovsky/code/prefix/FanoCode.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ternovsky/exceptions/NotAlphabetWord.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/site/css/maven-base.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/site/css/maven-theme.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/site/css/print.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/site/css/site.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/site/dependencies.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/site/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/site/integration.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/site/issue-tracking.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/site/license.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/site/mail-lists.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/site/plugin-management.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/site/project-info.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/site/project-summary.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/site/source-repository.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/site/team-list.html" />
-      <change type="DELETED" beforePath="C:\Users\ternovsky\IdeaProjects\InformationTheory\src\ternovsky\Alphabet.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\ternovsky\IdeaProjects\InformationTheory\src\ternovsky\Code.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\ternovsky\IdeaProjects\InformationTheory\src\ternovsky\Main.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\ternovsky\IdeaProjects\InformationTheory\src\ternovsky\ProbableSource.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\ternovsky\IdeaProjects\InformationTheory\src\ternovsky\Word.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\ternovsky\IdeaProjects\InformationTheory\src\ternovsky\code\RegularCode.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\ternovsky\IdeaProjects\InformationTheory\src\ternovsky\code\prefix\FanoCode.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\ternovsky\IdeaProjects\InformationTheory\src\ternovsky\exceptions\NotAlphabetWord.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/InformationTheory.iml" afterPath="$PROJECT_DIR$/InformationTheory.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/InformationTheory.ipr" afterPath="$PROJECT_DIR$/InformationTheory.ipr" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="DELETED" beforePath="C:\Users\ternovsky\IdeaProjects\InformationTheory\target\classes\ternovsky\Alphabet.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ternovsky\IdeaProjects\InformationTheory\target\classes\ternovsky\Code.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ternovsky\IdeaProjects\InformationTheory\target\classes\ternovsky\Main.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ternovsky\IdeaProjects\InformationTheory\target\classes\ternovsky\ProbableSource$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ternovsky\IdeaProjects\InformationTheory\target\classes\ternovsky\ProbableSource.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ternovsky\IdeaProjects\InformationTheory\target\classes\ternovsky\Word.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ternovsky\IdeaProjects\InformationTheory\target\classes\ternovsky\code\RegularCode.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ternovsky\IdeaProjects\InformationTheory\target\classes\ternovsky\code\prefix\FanoCode.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ternovsky\IdeaProjects\InformationTheory\target\classes\ternovsky\exceptions\NotAlphabetWord.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ternovsky\IdeaProjects\InformationTheory\target\site\css\maven-base.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ternovsky\IdeaProjects\InformationTheory\target\site\css\maven-theme.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ternovsky\IdeaProjects\InformationTheory\target\site\css\print.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ternovsky\IdeaProjects\InformationTheory\target\site\css\site.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ternovsky\IdeaProjects\InformationTheory\target\site\dependencies.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ternovsky\IdeaProjects\InformationTheory\target\site\images\close.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ternovsky\IdeaProjects\InformationTheory\target\site\images\collapsed.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ternovsky\IdeaProjects\InformationTheory\target\site\images\expanded.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ternovsky\IdeaProjects\InformationTheory\target\site\images\external.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ternovsky\IdeaProjects\InformationTheory\target\site\images\icon_error_sml.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ternovsky\IdeaProjects\InformationTheory\target\site\images\icon_info_sml.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ternovsky\IdeaProjects\InformationTheory\target\site\images\icon_success_sml.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ternovsky\IdeaProjects\InformationTheory\target\site\images\icon_warning_sml.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ternovsky\IdeaProjects\InformationTheory\target\site\images\logos\build-by-maven-black.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ternovsky\IdeaProjects\InformationTheory\target\site\images\logos\build-by-maven-white.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ternovsky\IdeaProjects\InformationTheory\target\site\images\logos\maven-feather.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ternovsky\IdeaProjects\InformationTheory\target\site\images\newwindow.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ternovsky\IdeaProjects\InformationTheory\target\site\index.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ternovsky\IdeaProjects\InformationTheory\target\site\integration.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ternovsky\IdeaProjects\InformationTheory\target\site\issue-tracking.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ternovsky\IdeaProjects\InformationTheory\target\site\license.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ternovsky\IdeaProjects\InformationTheory\target\site\mail-lists.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ternovsky\IdeaProjects\InformationTheory\target\site\plugin-management.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ternovsky\IdeaProjects\InformationTheory\target\site\project-info.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ternovsky\IdeaProjects\InformationTheory\target\site\project-summary.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ternovsky\IdeaProjects\InformationTheory\target\site\source-repository.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\ternovsky\IdeaProjects\InformationTheory\target\site\team-list.html" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/InformationTheory.iws" afterPath="$PROJECT_DIR$/InformationTheory.iws" />
     </list>
     <ignored path="InformationTheory.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -132,15 +114,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="pom.xml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="pom.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="30" selection-start="1618" selection-end="1618" vertical-scroll-proportion="0.42">
+            <state line="41" column="30" selection-start="1618" selection-end="1618" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="tag#build#0;tag#project#0" expanded="false" />
                 <element signature="tag#plugin#0;tag#plugins#0;tag#build#0;tag#project#0" expanded="false" />
                 <element signature="tag#plugin#1;tag#plugins#0;tag#build#0;tag#project#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="6" selection-start="6" selection-end="6" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -173,6 +164,7 @@
         <option value="$PROJECT_DIR$/src/ternovsky/code/prefix/FanoCode.java" />
         <option value="$PROJECT_DIR$/src/ternovsky/Main.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -298,54 +290,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="InformationTheory" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="InformationTheory" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="InformationTheory" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="InformationTheory" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="InformationTheory" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ternovsky" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -574,7 +518,11 @@
       <created>1349639721623</created>
       <updated>1349639721623</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add maven">
+      <created>1349642256956</created>
+      <updated>1349642256956</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -594,7 +542,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24614134" sideWeight="0.5519481" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2575142" sideWeight="0.5519481" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2575142" sideWeight="0.5519481" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.44805196" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -640,7 +588,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="add maven" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -655,6 +603,7 @@
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="Fano + Regular codes" />
     <MESSAGE value="Refactoring" />
+    <MESSAGE value="add maven" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -741,12 +690,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="30" selection-start="1618" selection-end="1618" vertical-scroll-proportion="0.42">
+        <state line="41" column="30" selection-start="1618" selection-end="1618" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="tag#build#0;tag#project#0" expanded="false" />
             <element signature="tag#plugin#0;tag#plugins#0;tag#build#0;tag#project#0" expanded="false" />
             <element signature="tag#plugin#1;tag#plugins#0;tag#build#0;tag#project#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="6" selection-start="6" selection-end="6" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>

@@ -1,6 +1,8 @@
 package ternovsky;
 
-import java.util.*;
+import java.util.Comparator;
+import java.util.Map;
+import java.util.TreeMap;
 
 /**
  * Created with IntelliJ IDEA.
@@ -11,23 +13,23 @@ import java.util.*;
  */
 public class ProbableSource {
 
-    private List<Pair<Character, Float>> characterProbablePairs;
+    private Map<Character, Float> characterProbableMap;
 
-    public ProbableSource(Collection<Pair<Character, Float>> characterProbablePairs) {
-        this.characterProbablePairs = new ArrayList<Pair<Character, Float>>(characterProbablePairs);
-        Collections.sort(this.characterProbablePairs, new Comparator<Pair<Character, Float>>() {
+    public ProbableSource(final Map<Character, Float> characterProbableMap) {
+        this.characterProbableMap = new TreeMap<Character, Float>(new Comparator<Character>() {
             @Override
-            public int compare(Pair<Character, Float> p1, Pair<Character, Float> p2) {
-                if (p1.equals(p2)) {
+            public int compare(Character c1, Character c2) {
+                if (c1.equals(c2)) {
                     return 0;
                 } else {
-                    return p1.getSecond() < p2.getSecond() ? 1 : -1;
+                    return characterProbableMap.get(c1) < characterProbableMap.get(c2) ? 1 : -1;
                 }
             }
         });
+        this.characterProbableMap.putAll(characterProbableMap);
     }
 
-    public List<Pair<Character, Float>> getSortedCharacterProbablePairs() {
-        return characterProbablePairs;
+    public Map<Character, Float> getCharacterProbableMap() {
+        return characterProbableMap;
     }
 }

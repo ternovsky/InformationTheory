@@ -1,9 +1,11 @@
-package ternovsky.codes;
+package ternovsky.code;
 
 import ternovsky.Alphabet;
 import ternovsky.Code;
 import ternovsky.Word;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -15,6 +17,8 @@ import java.util.Map;
  */
 public class RegularCode extends Code {
 
+    private int codeWordLength;
+
     public RegularCode(Alphabet initialAlphabet, Alphabet finalAlphabet, Map<Character, Word> codeTable) {
         super(initialAlphabet, finalAlphabet);
         for (Character character : codeTable.keySet()) {
@@ -25,24 +29,18 @@ public class RegularCode extends Code {
         }
     }
 
-
     @Override
     public Word decode(Word word) {
-        char[] initialChars = word.getCharacters();
-        char[] finalChars = new char[initialChars.length / (int) codeWordLength];
-        char[] codeWord = new char[(int) codeWordLength];
-        int cwi = 0;
-        int fci = 0;
-        for (char c : initialChars) {
-            if (cwi >= codeWordLength) {
-                finalChars[fci] = wordCharacterMap.get(new Word(codeWord));
-                fci++;
-                cwi = 0;
+        List<Character> initialSigns = word.getSigns();
+        List<Character> finalSigns = new ArrayList<Character>(initialSigns.size() / codeWordLength);
+        List<Character> bufferSigns = new ArrayList<Character>(codeWordLength);
+        for (Character initialSign : initialSigns) {
+            bufferSigns.add(initialSign);
+            if (bufferSigns.size() == codeWordLength) {
+                finalSigns.add(wordCharacterMap.get(new Word(bufferSigns)));
+                bufferSigns.clear();
             }
-            codeWord[cwi] = c;
-            cwi++;
         }
-        finalChars[fci] = wordCharacterMap.get(new Word(codeWord));
-        return new Word(finalChars);
+        return new Word(finalSigns);
     }
 }

@@ -1,11 +1,9 @@
 package ternovsky;
 
-import ternovsky.codes.FanoCode;
-import ternovsky.codes.RegularCode;
+import ternovsky.code.RegularCode;
+import ternovsky.code.prefix.FanoCode;
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 /**
@@ -33,18 +31,19 @@ public class Main {
         System.out.println(latinAlphabetWord + " -> " + binaryAlphabetWord);
         System.out.println(binaryAlphabetWord + " -> " + regularCode.decode(binaryAlphabetWord));
 
-        List<Pair<Character, Float>> pairs = new ArrayList<Pair<Character, Float>>();
-        pairs.add(new Pair<Character, Float>('f', 1f));
-        pairs.add(new Pair<Character, Float>('e', 2f));
-        pairs.add(new Pair<Character, Float>('d', 3f));
-        pairs.add(new Pair<Character, Float>('c', 5f));
-        pairs.add(new Pair<Character, Float>('b', 8f));
-        pairs.add(new Pair<Character, Float>('a', 10f));
+        Map<Character, Float> pairs = new HashMap<Character, Float>();
+        pairs.put('f', 1f);
+        pairs.put('e', 2f);
+        pairs.put('d', 3f);
+        pairs.put('c', 5f);
+        pairs.put('b', 8f);
+        pairs.put('a', 10f);
 
         ProbableSource probableSource = new ProbableSource(pairs);
 
         Code fanoCode = new FanoCode(latinAlphabet, binaryAlphabet, probableSource);
         binaryAlphabetWord = fanoCode.encode(new Word("abbcdefe"));
         System.out.println(new Word("abbcdefe") + " -> " + binaryAlphabetWord);
+        System.out.println(binaryAlphabetWord + " -> " + fanoCode.decode(binaryAlphabetWord));
     }
 }

@@ -12,13 +12,15 @@ import java.util.Set;
  */
 public class Alphabet {
 
+    public static final String SPLITTER = ",";
+
     private String name;
     private Set<Character> signs;
 
     public Alphabet(String name, String string) {
         this.name = name;
         signs = new HashSet<Character>();
-        for (String s : string.split(",")) {
+        for (String s : string.split(SPLITTER)) {
             for (char c : s.toCharArray()) {
                 signs.add(c);
             }

@@ -1,6 +1,7 @@
 package ternovsky;
 
-import java.util.Arrays;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created with IntelliJ IDEA.
@@ -10,22 +11,30 @@ import java.util.Arrays;
  * To change this template use File | Settings | File Templates.
  */
 public class Word {
-    private char[] word;
+
+    private List<Character> signs;
 
     public Word(String string) {
-        this.word = string.toCharArray();
+        this(string.toCharArray());
     }
 
-    public Word(char[] word) {
-        this.word = word;
+    public Word(List<Character> signs) {
+        this.signs = new ArrayList<Character>(signs);
     }
 
-    public char[] getCharacters() {
-        return word;
+    public Word(char[] signs) {
+        this.signs = new ArrayList<Character>(signs.length);
+        for (char c : signs) {
+            this.signs.add(c);
+        }
+    }
+
+    public List<Character> getSigns() {
+        return signs;
     }
 
     public int getLength() {
-        return word.length;
+        return signs.size();
     }
 
     @Override
@@ -33,22 +42,22 @@ public class Word {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        Word word1 = (Word) o;
+        Word word = (Word) o;
 
-        if (!Arrays.equals(word, word1.word)) return false;
+        if (signs != null ? !signs.equals(word.signs) : word.signs != null) return false;
 
         return true;
     }
 
     @Override
     public int hashCode() {
-        return word != null ? Arrays.hashCode(word) : 0;
+        return signs != null ? signs.hashCode() : 0;
     }
 
     @Override
     public String toString() {
         StringBuilder builder = new StringBuilder();
-        for (char c : word) {
+        for (char c : signs) {
             builder.append(c);
         }
         return builder.toString();

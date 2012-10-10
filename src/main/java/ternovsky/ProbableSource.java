@@ -13,23 +13,23 @@ import java.util.TreeMap;
  */
 public class ProbableSource {
 
-    private Map<Character, Float> characterProbableMap;
+    private Map<Character, Float> signProbableMap;
 
-    public ProbableSource(final Map<Character, Float> characterProbableMap) {
-        this.characterProbableMap = new TreeMap<Character, Float>(new Comparator<Character>() {
+    public ProbableSource(final Map<Character, Float> signProbableMap) {
+        this.signProbableMap = new TreeMap<Character, Float>(new Comparator<Character>() {
             @Override
             public int compare(Character c1, Character c2) {
                 if (c1.equals(c2)) {
                     return 0;
                 } else {
-                    return characterProbableMap.get(c1) < characterProbableMap.get(c2) ? 1 : -1;
+                    return signProbableMap.get(c1) < signProbableMap.get(c2) ? 1 : -1;
                 }
             }
         });
-        this.characterProbableMap.putAll(characterProbableMap);
+        this.signProbableMap.putAll(signProbableMap);
     }
 
-    public Map<Character, Float> getCharacterProbableMap() {
-        return characterProbableMap;
+    public Map<Character, Float> getSignProbableMap() {
+        return signProbableMap;
     }
 }

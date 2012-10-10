@@ -2,6 +2,7 @@ package ternovsky;
 
 import ternovsky.code.RegularCode;
 import ternovsky.code.prefix.FanoCode;
+import ternovsky.code.prefix.HuffmanCode;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -45,5 +46,10 @@ public class Main {
         binaryAlphabetWord = fanoCode.encode(new Word("abbcdefe"));
         System.out.println(new Word("abbcdefe") + " -> " + binaryAlphabetWord);
         System.out.println(binaryAlphabetWord + " -> " + fanoCode.decode(binaryAlphabetWord));
+
+        Code huffmanCode = new HuffmanCode(latinAlphabet, binaryAlphabet, probableSource);
+        binaryAlphabetWord = huffmanCode.encode(new Word("abbcdefe"));
+        System.out.println(new Word("abbcdefe") + " -> " + binaryAlphabetWord);
+        System.out.println(binaryAlphabetWord + " -> " + huffmanCode.decode(binaryAlphabetWord));
     }
 }

@@ -1,7 +1,6 @@
 package ternovsky.code.prefix;
 
 import ternovsky.Alphabet;
-import ternovsky.Code;
 import ternovsky.ProbableSource;
 import ternovsky.Word;
 
@@ -14,55 +13,21 @@ import java.util.*;
  * Time: 13:36
  * To change this template use File | Settings | File Templates.
  */
-public class FanoCode extends Code {
-
-    private float averageCodeWordLength;
-    private Map<Character, List<Character>> signCodeWordMap;
-    private Map<Character, Float> signProbableMap;
+public class FanoCode extends PrefixCode {
 
     public FanoCode(Alphabet initialAlphabet, Alphabet finalAlphabet, ProbableSource probableSource) {
-        super(initialAlphabet, finalAlphabet);
-
-        signProbableMap = probableSource.getCharacterProbableMap();
-        signCodeWordMap = new HashMap<Character, List<Character>>(signProbableMap.size());
-        for (Character character : signProbableMap.keySet()) {
-            signCodeWordMap.put(character, new LinkedList<Character>());
-        }
-
-        List<Character> signs = new ArrayList<Character>(signProbableMap.keySet());
-        int middleIndex = findMiddleIndex(signs);
-        buildCodeTable('1', signs, 0, middleIndex);
-        buildCodeTable('0', signs, middleIndex, signs.size());
-
-        int probableSum = 0;
-        for (Character sign : signCodeWordMap.keySet()) {
-            Word word = new Word(signCodeWordMap.get(sign));
-            probableSum += signProbableMap.get(sign);
-            averageCodeWordLength += word.getLength() * signProbableMap.get(sign);
-            characterWordMap.put(sign, word);
-            wordCharacterMap.put(word, sign);
-        }
-        averageCodeWordLength = averageCodeWordLength / signCodeWordMap.size() / probableSum;
+        super(initialAlphabet, finalAlphabet, probableSource);
     }
 
     @Override
-    public Word decode(Word word) {
-        List<Character> initialSigns = word.getSigns();
-        List<Character> finalSigns = new ArrayList<Character>();
-        List<Character> bufferSigns = new ArrayList<Character>();
-        for (Character initialSign : initialSigns) {
-            bufferSigns.add(initialSign);
-            Character foundCharacter = wordCharacterMap.get(new Word(bufferSigns));
-            if (foundCharacter != null) {
-                finalSigns.add(foundCharacter);
-                bufferSigns.clear();
-            }
-
-        }
-        return new Word(finalSigns);
+    protected void buildCodeTable() {
+        List<Character> signs = new ArrayList<Character>(signProbableMap.keySet());
+        int middleIndex = findMiddleIndex(signs);
+        addCharToCodeWords('1', signs, 0, middleIndex);
+        addCharToCodeWords('0', signs, middleIndex, signs.size());
     }
 
-    private void buildCodeTable(Character character, List<Character> signs, int startIndex, int finishIndex) {
+    private void addCharToCodeWords(Character character, List<Character> signs, int startIndex, int finishIndex) {
         for (int i = startIndex; i < finishIndex; i++) {
             signCodeWordMap.get(signs.get(i)).add(character);
         }
@@ -70,8 +35,8 @@ public class FanoCode extends Code {
             return;
         }
         int middleIndex = startIndex + findMiddleIndex(signs.subList(startIndex, finishIndex - 1));
-        buildCodeTable('1', signs, startIndex, middleIndex);
-        buildCodeTable('0', signs, middleIndex, finishIndex);
+        addCharToCodeWords('1', signs, startIndex, middleIndex);
+        addCharToCodeWords('0', signs, middleIndex, finishIndex);
     }
 
     private int findMiddleIndex(List<Character> signs) {
